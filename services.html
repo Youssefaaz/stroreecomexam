@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services du Magasin</title>
+    <style>
+        .navbar {
+    /*
+    background-color: #8B008B;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;*/
+    background-color: #8B008B;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+    
+    
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #f00; /* Change the color on hover  space-around*/
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #servicesContainer {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .service {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .service h2 {
+            color: #555;
+        }
+
+        .service p {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-list">
+            <li><a href="navbar.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="login.html" >Login</a></li>
+        </ul>
+    </nav>
+    <div id="servicesContainer">
+        <h1>Nos Services</h1>
+
+        <div class="service">
+            <img src="smartwatch.jpg" alt="Smartwatch">
+            <h2>Vente de Smartwatches</h2>
+            <p>Découvrez notre collection de smartwatches de haute qualité. Restez connecté avec style.</p>
+            <p><strong>Explorez les derniers modèles ></strong></p>
+        </div>
+
+        <div class="service">
+            <img src="bluetooth_headphones.jpg" alt="Casque Bluetooth">
+            <h2>Casques Bluetooth Premium</h2>
+            <p>Plongez dans un son exceptionnel avec nos casques Bluetooth. Qualité audio supérieure garantie.</p>
+            <p><strong>Découvrez notre gamme ></strong></p>
+        </div>
+
+        <div class="service">
+            <img src="airpods.jpg" alt="Air Pods">
+            <h2>Vente d'Air Pods</h2>
+            <p>Expérimentez une liberté sans fil avec nos Air Pods. Son cristallin et confort exceptionnel.</p>
+            <p><strong>Consultez nos offres spéciales ></strong></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuille</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&family=Ubuntu&display=swap');
+       *{
+        font-family: 'Kanit', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+       }
+       .logo img {
+                height: 400px;
+                width: 400px;
+                padding-top: 20px;
+                
+            }
+        body{
+            height:800px;
+            padding: 0;
+            margin: 0;
+        }
+        .navbar{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 3%;
+           background-color: white;
+           height: 4%;
+           position: fixed;
+           top: 0;
+           width: 98%;
+           z-index: 1000;
+           background: rgb(175, 232, 238);
+
+        }
+        .nav-list{
+            margin-left: 100px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            
+        }
+        .navbar li{
+            margin: 0 15px;
+            margin-left: 50px;
+        }
+        .nav-list a{
+            text-decoration: none;
+            color: purple;
+        }
+        .nav-list a:hover{
+            color:palevioletred;
+        }
+        .text{
+
+            width: 40%;
+            margin-left:5% ;
+            margin-top: 7%;
+            padding-top: 2%;
+            padding-bottom: 10%;
+
+        }
+        .text h1{
+            font-size: 40px;
+        }
+        .text p{
+            font-size: 20px;
+        }
+        .photop{
+            flex-basis: 50%;
+            width: 300px;
+            height: 450px;
+        }
+        .present{
+            margin-left: 140%;
+            margin-top: -100%;
+        }
+        section{
+            padding: 2%;
+        }
+        .text a{
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+            padding: 8px 30px;
+            background: rgb(65, 8, 67) ;
+            color: white;
+            border-radius: 32px;
+            transition: 0.5s;
+        }
+       .header {
+        margin-top: -20px;
+        background: radial-gradient(#fff , #eaf2fb);
+       }
+       .t {
+        margin-right: 50px;
+       }
+       .text a:hover {
+        background: rgb(24, 3, 24);
+       }
+       .col-3 {
+        flex-basis: 32%;
+        min-width: 250px;
+        margin: auto;
+       }
+       .categories {
+        margin: 70px;
+        
+       }
+       .col-3 img {
+        width: 100%;
+       }
+       .col-3 {
+
+       }
+       .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       }
+       .containerX h2{
+        text-align: center;
+        font-size: 1.8rem;
+        color: #444;
+       }
+       .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.5s;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    color: #333;
+}
+
+.price {
+    color: #e44d26;
+    font-weight: bold;
+}
+
+button {
+    background-color: #a226e479;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+.title {
+    text-align: center;
+    color: gray;
+    margin: 0 auto 80px;
+    line-height: 60px;
+}
+.title::after{
+    background: purple;
+    border-radius: 5px;
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.product:hover {
+    transform: translateY(-5px);
+}
+.offer {
+    background: rgb(175, 232, 238);
+    margin-top: 80px;
+    padding: 30px;
+}
+.col-2 .offer-img{
+    padding: 50px;
+    width: 30px;
+}
+small {
+    color: #555;
+}
+.btn {
+            margin: 30px 0px;
+            display: inline-block;
+            background: rgb(65, 8, 67) ;
+            color: white;
+            border-radius: 32px;
+            padding: 8px 30px;
+            transition: 0.5s;
+            text-decoration: none;
+}
+.brands {
+    margin: 100px auto;
+}
+.col-5 {
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+     filter: grayscale(0%);
+}
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0px 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1 , .footer-col-2 , .footer-col-3 , .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+.footer-col-1 {
+    flex-basis: 30%;
+    margin-left: 20px;
+}
+.footer-col-2 {
+    flex: 1%;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3 , .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo {
+    margin-top: 20px;
+}
+.app-logo img {
+    width: 140px;
+}
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyrith {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+    <header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"> <img src="logo.png" alt="logo"></div>
+            <ul class="nav-list">
+                <a href=""><li>Acceuille</li></a>
+                <a href="" id="lo"><li>produit</li></a>
+                <a href=""><li>Promotion</li></a>
+                <a href="login.html"><li>Login</li></a>
+
+            </ul>
+            <img class="t" src="img/cart.png" alt="cart" width="32px">
+        </div>
+    </div>
+    </header>
+    <section>
+             
+            <div class="text">
+            <h1>
+            <i>
+                Sons cristallins, liberté sans fil, intelligence au poignet : Explorez l'avenir avec nos casques, AirPods et smartwatches
+            </i> 
+             </h1>
+            <p>
+                    Découvrez une expérience auditive immersive avec nos casques Bluetooth, 
+                    libérez la puissance de la technologie sans fil avec nos AirPods,
+                     et restez connecté avec style grâce à nos smartwatches dernier cri.
+                    Bienvenue dans un monde où le son exceptionnel et la technologie élégante se rencontrent
+                
+            </p>
+            <a href="">Explorer Maintenant &#10143; </a>
+            <div class="present">
+                <img class="photop" src="imagecasque3.png" alt="photo" >
+
+            </div>
+            
+            </div>
+        </div>
+        <div class="containerX">
+            <section class="categories">
+                <div class="row">
+                    <h2>Categorie Veddete</h2>
+                    <div class="col-3">
+                        <img src="prescasque2.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="pressmartwatche.jpg" alt="">
+                    </div>
+                         <div class="col-3">
+                        <img src="presairpods.jpg" alt="">
+                    </div>
+                </div>
+
+        </section>
+        </div>
+
+        <h2 class="title"> Meilleur produits </h2>
+
+        <div class="products" id="lo">
+            <div class="product">
+                <img src="produit1.jpg" alt="Produit 1">
+                <h2>PureWave Bluetooth Headset</h2>
+                <p>Découvrez l'harmonie pure du son avec le casque PureWave Bluetooth.
+                     Plongez-vous dans une expérience audio exceptionnelle avec la liberté sans fil et un design élégant en blanc</p>
+                <p class="price">$19.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit22.png" alt="Produit 2">
+                <h2>SnowFlare Wireless Headphones</h2>
+                <p>Les écouteurs SnowFlare allient élégance et performance audio.
+                     Profitez de la liberté ultime, enveloppé dans un design blanc éclatant,
+                     pour une expérience sonore cristalline et immersive.</p>
+                <p class="price">$29.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit34.png" alt="Produit 3">
+                <h2>ShadowSync Smartwatch <br> gray</h2>
+                <p>Explorez l'élégance technologique avec la ShadowSync Smartwatch. 
+                    Son design noir sophistiqué rencontre une synchronisation avancée, 
+                    offrant une expérience connectée sans compromis</p>
+                <p class="price">$24.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit5.png" alt="Produit 4">
+                <h2>ObsidianPulse Wearable Device black</h2>
+                <p>OnyxPulse redéfinit la sophistication. Cette smartwatch noire
+                    , associée à des fonctionnalités de suivi de la santé, évoque un équilibre parfait entre style et bien-être,
+                     tout au poignet.</p>
+                <p class="price">$39.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+
+           
+    
+        </div>
+
+        <h2 class="title"> Dernier produits</h2>
+
+        <div class="products">
+            <div class="product">
+                <img src="produit1.jpg" alt="Produit 1">
+                <h2>PureWave Bluetooth Headset</h2>
+                <p>Découvrez l'harmonie pure du son avec le casque PureWave Bluetooth.
+                     Plongez-vous dans une expérience audio exceptionnelle avec la liberté sans fil et un design élégant en blanc</p>
+                <p class="price">$19.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit22.png" alt="Produit 2">
+                <h2>SnowFlare Wireless Headphones</h2>
+                <p>Les écouteurs SnowFlare allient élégance et performance audio.
+                     Profitez de la liberté ultime, enveloppé dans un design blanc éclatant,
+                     pour une expérience sonore cristalline et immersive.</p>
+                <p class="price">$29.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit34.png" alt="Produit 3">
+                <h2>ShadowSync Smartwatch <br> gray</h2>
+                <p>Explorez l'élégance technologique avec la ShadowSync Smartwatch. 
+                    Son design noir sophistiqué rencontre une synchronisation avancée, 
+                    offrant une expérience connectée sans compromis</p>
+                <p class="price">$24.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit5.png" alt="Produit 4">
+                <h2>ObsidianPulse Wearable Device black</h2>
+                <p>OnyxPulse redéfinit la sophistication. Cette smartwatch noire
+                    , associée à des fonctionnalités de suivi de la santé, évoque un équilibre parfait entre style et bien-être,
+                     tout au poignet.</p>
+                <p class="price">$39.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+
+            <div class="product">
+                <img src="produit6.png" alt="Produit 1">
+                <h2>BlancWave AirPods</h2>
+                <p>Plongez dans l'expérience musicale ultime avec les BlancWave AirPods.
+                     Leur design blanc épuré offre un son cristallin et une liberté totale de mouvement.
+                     Laissez-vous transporter par la perfection du son, où que vous alliez</p>
+                <p class="price">$19.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit7.png" alt="Produit 2">
+                <h2>ShadowTune AirPods</h2>
+                <p>Explorez de nouvelles dimensions sonores avec les ShadowTune. 
+                    Leur allure sombre abrite une technologie avancée
+                     vous plongeant dans un monde sonore immersif. Profitez de la musique dans
+                      l'ombre avec ces compagnons</p>
+                <p class="price">$29.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit8.png" alt="Produit 3">
+                <h2>MidnightEcho AirPods</h2>
+                <p>Immergez-vous dans une symphonie de son avec les MidnightEcho AirPods.
+                     Leur design noir élégant marie parfaitement style et innovation audio.
+                      Profitez de chaque note dans l'obscurité avec ces écouteurs sans fil.
+                </p>
+                <p class="price">$24.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+    
+            <div class="product">
+                <img src="produit9.png" alt="Produit 4">
+                <h2>FusionSync Wearable Tech</h2>
+                <p>Fusionnez votre style avec la technologie ultime grâce à FusionSync.
+                     Cette montre et ces AirPods intégrés en noir vous offrent une expérience complète.
+                      Contrôlez votre musique, restez connecté et soyez à la pointe de la mode,
+                     </p>
+                <p class="price">$39.99</p>
+                <a href="formulairee.html"><button>Acheter</button></a>
+            </div>
+        </div>
+    </div>
+    <!-----offer----->
+    <div class="offer">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/exclusive.png" class="offer img">
+            </div>
+            <div aria-colcount="col-2">
+                <p>Exclusively avialebel on Electroworld</p>
+                <h1>Smart band</h1>
+                <small>Fusionnez votre style avec la technologie ultime grâce à FusionSync.
+                    Cette montre et ces AirPods intégrés en noir vous offrent une expérience complète.
+                     Contrôlez votre musique, restez connecté et soyez à la pointe de la mode,
+                </small>
+                
+            </div>
+            <a href="" class="btn" >Buy &#10143;</a>
+        </div>
+    </div>
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="img/logo-godrej.png" >
+                </div>
+                <div class="col-5">
+                    <img src="img/logo-oppo.png" >
+                </div>
+
+                <div class="col-5">
+                    <img src="img/logo-philips.png" >
+                </div>
+
+                <div class="col-5">
+                    <img src="img/logo-paypal.png" >
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+         <div class="container">
+            <di class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p3>Download App for android and ios</p3>
+                    <div class="app-logo">
+                        <img src="img/app-store.png" >
+                        <img src="img/play-store.png" >
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="" alt="logo">
+                    <p3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse officia ex magnam tempora corrupti quam minima consequuntur, voluptatem suscipit sint maiores fuga dicta quidem officiis vitae? Ex exercitationem placeat tempore!
+                    </p3>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usfull links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog post</li>
+                        <li>Return Policy</li>
+                        <li>Join affilate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyrith">Copyrith 2023</p>
+
+         </div>
+             
+    </div>
+   
+
+</body>
+</html>
